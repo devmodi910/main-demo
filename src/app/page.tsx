@@ -18,7 +18,7 @@ export default function Component() {
         <header className="relative flex justify-end items-center p-6">
           <div className="flex gap-2">
             <Button />
-            <button className="bg-transparent border border-slate-500 text-white px-4 py-2 rounded-full hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 flex flex-row">
+            <button className="bg-transparent border border-white text-white px-4 py-3 rounded-full text-center hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 flex flex-row">
               FAQ
             </button>
           </div>
@@ -36,9 +36,9 @@ export default function Component() {
               />
             </div>
             <h1 className="text-lg max-w-md mx-auto md:text-5xl font-bold text-white mb-2">
-              Website Grader<sup className="text-3xl">®</sup>
+              Website Grader<sup className="text-xl md:text-3xl">®</sup>
             </h1>
-            <p className="text-white text-lg max-w-md mx-auto mb-8">
+            <p className="text-white text-xs md:text-base max-w-md mx-auto mb-8">
               Grade your website in seconds. Then learn how to improve it for
               free.
             </p>
@@ -49,29 +49,30 @@ export default function Component() {
                 <input
                   type="url"
                   placeholder="Website"
-                  className="w-full p-3 mb-4 rounded bg-transparent text-center border-b-2 border-slate-500 text-white focus:border-blue-400 outline-none transition-colors"
+                  className="w-full p-3 mb-4 rounded bg-transparent text-center border-b-2 border-slate-500 text-white focus:border-blue-400 outline-none transition-colors focus:placeholder-transparent"
                 />
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full p-3 mb-4 rounded bg-transparent text-center border-b-2 border-slate-500 text-white focus:border-blue-400 outline-none transition-colors"
+                  className="w-full p-3 mb-4 rounded bg-transparent text-center border-b-2 border-slate-500 text-white focus:border-blue-400 outline-none transition-colors focus:placeholder-transparent"
                 />
-              </form>
+              
 
               <p className="text-white text-xs mb-6 text-left">
                 We're committed to your privacy. HubSpot uses the information
                 you provide to us to contact you about our relevant content,
                 products, and services. You may unsubscribe from these
                 communications at any time. For more information, check out our{" "}
-                <Link href="#" className="text-blue-400 hover:underline">
-                  Privacy Policy
+                <Link href="/webgrader" className="text-blue-400 hover:underline">
+                  Privacy Policy.
                 </Link>
-                .
+                
               </p>
+              </form>
 
-              <button className="bg-orange-500 text-white px-5 py-2 rounded-sm font-normal w-40 transition-all duration-300 transform">
+              <Link href="/webgrader" className="bg-orange-500 text-white px-5 py-2 rounded-sm font-normal w-40 transition-all duration-300 transform ">
                 Get your score
-              </button>
+              </Link>
             </div>
           </div>
         </main>
@@ -81,14 +82,15 @@ export default function Component() {
           <div className="flex justify-center items-center gap-2 mb-1 underline-offset-auto">
             <Link
               href="#"
-              className="text-decoration-line: underline transition-all duration-300 hover:text-blue-400 ;"
+              className="underline transition-all duration-300 hover:no-underline"
             >
               Privacy Policy
             </Link>
             <span>|</span>
             <Link
               href="#"
-              className="text-decoration-line: underline hover:underline transition-all duration-300 hover:text-blue-400"
+              className="underline transition-all duration-300 hover:no-underline"
+
             >
               Legal stuff
             </Link>

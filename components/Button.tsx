@@ -8,12 +8,13 @@ export default function Button() {
   return (
     <div className="relative">
       <button
-        className="flex items-center gap-1 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-full transition-all duration-300"
+        className="hidden md:flex items-center border border-white gap-1 text-white px-4 py-2 rounded-full transition-all duration-300"
         onClick={() => setIsOpen(!isOpen)}
       >
+        <img src="/images/icon-globe.png" alt="English" className="w-8 h-8"></img>
         English
         <svg
-          className={`w-2.5 h-2.5 ms-3 transition-transform duration-300 ${
+          className={`w-2 h-2.5 ms-1 transition-transform duration-300 ${
             isOpen ? "rotate-180" : "rotate-0"
           }`}
           aria-hidden="true"
