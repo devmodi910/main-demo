@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function Button() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <div className="relative">
