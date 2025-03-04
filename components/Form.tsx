@@ -1,6 +1,7 @@
 "use client";
 
 import { fetchWebsiteDetails } from "@/app/actions/fetchWebsiteDetails";
+import { redirect } from "next/dist/server/api-utils";
 import Link from "next/link";
 
 export default function Form() {
@@ -16,6 +17,7 @@ export default function Form() {
 
     const response = await fetchWebsiteDetails(url); // ✅ Send URL as a string
     console.log(response);
+    
   }
 
   return (
